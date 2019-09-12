@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/app', function () {
+Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/who_are_you', function () {
+    return view('who_are_you');
 });

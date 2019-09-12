@@ -1,6 +1,8 @@
-
+@import "components/who_are_you";
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import '../../public/fonts/tajawal/tajawal.css';
 
 // Variables
 @import 'variables';
@@ -8,7 +10,7 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
+//.navbar-laravel {
+//  background-color: #fff;
+//  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+//}

@@ -1,0 +1,129 @@
+nav {
+  height: 72px;
+}
+
+#logo {
+  height: 26px;
+  width: 130px;
+}
+
+#navbar_items_right {
+  #search_button, #basket_button {
+    width: 81px;
+    height: 41px;
+  }
+
+  #sign_up, #login {
+    width: 81px;
+    height: 36px;
+  }
+
+  #sign_up {
+    border: 1px solid #FF5403;
+    color: #FF5403;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+  }
+
+  #login {
+    color: #313640;
+    font: bold 16px Lato;
+    //letter-spacing: 16px;
+    //line-height: 17px;
+  }
+}
+
+#models, #videos {
+  //height: 19px;
+  width: 81px;
+  font: bold 16px Lato;
+}
+
+h1 {
+  font: bold 42px Tajawal !important;
+  margin-top: 53px;
+  height: 56px !important;
+  margin-bottom: 6px !important;
+}
+
+#header_under_liner {
+  width: 298px;
+  height: 6px;
+  background: linear-gradient(to right, #FFBC03, #F31463);
+}
+
+#main_content {
+  margin-top: -40px;
+  height: 884px;
+  background-image: url("../../../public/svg/background.svg") !important;
+  background-repeat: repeat;
+  #fan_window, #model_window {
+    width: 372px;
+    height: 540px;
+    background-color: #FFFFFF;
+  }
+
+  #or_window {
+    width: 60px;
+    height: 112px;
+    margin-left: 60px;
+    margin-right: 60px;
+    p {
+      font: bold 45px Lato;
+    }
+  }
+
+  #fan_window {
+    h2 {
+      color: #FF5403;
+    }
+
+    #sign_up_for_free {
+      background: linear-gradient(to right, #FFBC03, #F31463);
+    }
+  }
+
+  #model_window {
+    h2 {
+      color: #C22AEF;
+    }
+
+    #start_my_store {
+      background: linear-gradient(to right, #EF2AA5, #C22AEF);
+    }
+  }
+
+  #fan_window h2, #model_window h2 {
+    font: bold 42px Lato;
+    margin-top: 36px;
+  }
+  #fan_window h4, #model_window h4 {
+    font: bold 18px Lato;
+    height: 22px;
+    margin-bottom: 21px;
+  }
+  .bottom_button {
+    margin-top: 71px;
+    height: 48px;
+    width: 284px;
+    font: bold 16px Lato;
+    color: #FFFFFF;
+  }
+
+  .middle_list {
+    margin-top: 42px;
+    height: 249px;
+    width: 226px;
+  }
+}
+
+#login_now {
+  margin-top: -114px;
+  height: 22px;
+  font-size: 18px;
+
+  a {
+    color: #FF5403;
+  }
+}
+
