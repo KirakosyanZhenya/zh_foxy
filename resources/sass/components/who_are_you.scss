@@ -1,41 +1,13 @@
 nav {
-  height: 72px;
+  min-height: 72px;
 }
 
-.navbar {
-  position: relative;
-  #logo {
-    position: absolute;
-    left: 386px;
-    top: 23px;
-    height: 26px;
-    width: 130px;
-    padding: 0;
-  }
-  #models {
-    position: absolute;
-    left: 580px;
-    top: 27px;
-  }
-  #videos {
-    position: absolute;
-    left: 677px;
-    top: 27px;
-  }
-  #models, #videos {
-    height: 19px;
-    width: 81px;
-    color: #313640;
-    font: bold 16px Lato;
-    text-decoration: none;
-  }
+#logo {
+  height: 26px;
+  width: 130px;
+}
 
-  #search_button {
-    position: absolute;
-    left: 1162px;
-    top: 16px;
-  }
-
+#navbar_items_right {
   #search_button, #basket_button {
     width: 81px;
     height: 41px;
@@ -47,9 +19,6 @@ nav {
   }
 
   #sign_up {
-    position: absolute;
-    left: 1356px;
-    top: 18px;
     border: 1px solid #FF5403;
     color: #FF5403;
     font-family: 'Lato', sans-serif;
@@ -57,60 +26,30 @@ nav {
   }
 
   #login {
-    position: absolute;
-    left: 1453px;
-    top: 18px;
     color: #313640;
     font: bold 16px Lato;
     //letter-spacing: 16px;
     //line-height: 17px;
   }
+}
 
-  #login:focus, #sign_up:focus {
-    outline:0;
-  }
-
-  #basket_button {
-    position: absolute;
-    left: 1259px;
-    top: 16px;
-    div {
-      position: relative;
-      width: 27px;
-      height: 26px;
-    }
-    p {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 14px;
-      width: 14px;
-      background: linear-gradient(#FFBC03, #F31463);
-      border-radius: 50%;
-      font: normal 10px Lato;
-      color: #FFFFFF;
-      text-align: center;
-      z-index: 15;
-    }
-
-    img {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      z-index: 14;
-    }
-  }
+#models, #videos {
+  //height: 19px;
+  width: 81px;
+  font: bold 16px Lato;
 }
 
 #header_who_are_you {
   position: absolute;
-  left: 812px;
+  //left: 812px;
   top: 125px;
-  //margin-top: 53px;
+  width: 100%;
+  z-index: 5;
+
   h1 {
-    font: bold 42px Tajawal;
+    font: bold 42px Tajawal !important;
+    //margin-top: 53px;
     height: 56px !important;
-    width: 270px !important;
     margin-bottom: 6px !important;
   }
 
@@ -125,35 +64,30 @@ nav {
   position: absolute;
   left: -4px;
   top: 151px;
+  width: 100%;
   //margin-top: -40px;
-  width: 1920px;
-  height: 884px;
-  background-image: url("../../../public/svg/background.svg");
+  //height: 884px;
+  min-height: 884px;
+  background-image: url("../../../public/svg/background.svg") !important;
   background-repeat: repeat;
   #fan_window, #model_window {
-    width: 372px;
+    max-width: 100%;
     height: 540px;
+    padding: 0 12%;
     background-color: #FFFFFF;
-    -webkit-box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.16);
-    -moz-box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.16);
-    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.16);
   }
 
   #or_window {
-    position: absolute;
-    left: 930px;
-    top: 320px;
     width: 60px;
     height: 112px;
+    margin-left: 60px;
+    margin-right: 60px;
     p {
       font: bold 45px Lato;
     }
   }
 
   #fan_window {
-    position: absolute;
-    left: 483px;
-    top: 117px;
     h2 {
       color: #FF5403;
     }
@@ -164,9 +98,6 @@ nav {
   }
 
   #model_window {
-    position: absolute;
-    left: 1065px;
-    top: 117px;
     h2 {
       color: #C22AEF;
     }
@@ -186,10 +117,11 @@ nav {
     margin-bottom: 21px;
   }
   .bottom_button {
-    height: 48px;
-    width: 284px;
-    border-radius: 6px;
     margin-top: 71px;
+    height: 48px;
+    //max-width: 284px;
+    width: 100%;
+    border-radius: 6px;
     font: bold 16px Lato;
     color: #FFFFFF;
     img {
@@ -199,15 +131,18 @@ nav {
 
   .middle_list {
     margin-top: 42px;
-    height: 249px;
-    width: 226px;
+    //min-height: 249px;
+    width: 100%;
+    //max-width: 226px;
+    height: 46%;
   }
 }
 
 #login_now {
   position: absolute;
-  left: 805px;
+  //left: 805px;
   top: 912px;
+  width: 100%;
   //margin-top: -114px;
   height: 22px;
   font-size: 18px;
@@ -217,3 +152,22 @@ nav {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  #fan_window {
+    background-color: red;
+  }
+  #main_content {
+    position: relative;
+    background-image:none !important;
+    height: 100%;
+  }
+
+  #or_window {
+    margin-top: 1rem;
+  }
+
+  #login_now {
+    position: relative;
+    top: 200px;
+  }
+}

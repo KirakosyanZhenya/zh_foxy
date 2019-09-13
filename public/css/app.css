@@ -43,127 +43,54 @@
 @charset "UTF-8";
 
 nav {
-  height: 72px;
+  min-height: 72px;
 }
 
-.navbar {
-  position: relative;
-}
-
-.navbar #logo {
-  position: absolute;
-  left: 386px;
-  top: 23px;
+#logo {
   height: 26px;
   width: 130px;
-  padding: 0;
 }
 
-.navbar #models {
-  position: absolute;
-  left: 580px;
-  top: 27px;
-}
-
-.navbar #videos {
-  position: absolute;
-  left: 677px;
-  top: 27px;
-}
-
-.navbar #models,
-.navbar #videos {
-  height: 19px;
-  width: 81px;
-  color: #313640;
-  font: bold 16px Lato;
-  text-decoration: none;
-}
-
-.navbar #search_button {
-  position: absolute;
-  left: 1162px;
-  top: 16px;
-}
-
-.navbar #search_button,
-.navbar #basket_button {
+#navbar_items_right #search_button,
+#navbar_items_right #basket_button {
   width: 81px;
   height: 41px;
 }
 
-.navbar #sign_up,
-.navbar #login {
+#navbar_items_right #sign_up,
+#navbar_items_right #login {
   width: 81px;
   height: 36px;
 }
 
-.navbar #sign_up {
-  position: absolute;
-  left: 1356px;
-  top: 18px;
+#navbar_items_right #sign_up {
   border: 1px solid #FF5403;
   color: #FF5403;
   font-family: "Lato", sans-serif;
   font-size: 14px;
 }
 
-.navbar #login {
-  position: absolute;
-  left: 1453px;
-  top: 18px;
+#navbar_items_right #login {
   color: #313640;
   font: bold 16px Lato;
 }
 
-.navbar #login:focus,
-.navbar #sign_up:focus {
-  outline: 0;
-}
-
-.navbar #basket_button {
-  position: absolute;
-  left: 1259px;
-  top: 16px;
-}
-
-.navbar #basket_button div {
-  position: relative;
-  width: 27px;
-  height: 26px;
-}
-
-.navbar #basket_button p {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 14px;
-  width: 14px;
-  background: linear-gradient(#FFBC03, #F31463);
-  border-radius: 50%;
-  font: normal 10px Lato;
-  color: #FFFFFF;
-  text-align: center;
-  z-index: 15;
-}
-
-.navbar #basket_button img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 14;
+#models,
+#videos {
+  width: 81px;
+  font: bold 16px Lato;
 }
 
 #header_who_are_you {
   position: absolute;
-  left: 812px;
   top: 125px;
+  width: 100%;
+  z-index: 5;
 }
 
 #header_who_are_you h1 {
-  font: bold 42px Tajawal;
+  font: bold 42px Tajawal !important;
   height: 56px !important;
-  width: 270px !important;
   margin-bottom: 6px !important;
 }
 
@@ -177,36 +104,29 @@ nav {
   position: absolute;
   left: -4px;
   top: 151px;
-  width: 1920px;
-  height: 884px;
-  background-image: url(/images/background.svg?a01a2d58dfc844f2cfe541552beaedc5);
+  width: 100%;
+  min-height: 884px;
+  background-image: url(/images/background.svg?a01a2d58dfc844f2cfe541552beaedc5) !important;
   background-repeat: repeat;
 }
 
 #main_content #fan_window,
 #main_content #model_window {
-  width: 372px;
+  max-width: 100%;
   height: 540px;
+  padding: 0 12%;
   background-color: #FFFFFF;
-  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.16);
 }
 
 #main_content #or_window {
-  position: absolute;
-  left: 930px;
-  top: 320px;
   width: 60px;
   height: 112px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 #main_content #or_window p {
   font: bold 45px Lato;
-}
-
-#main_content #fan_window {
-  position: absolute;
-  left: 483px;
-  top: 117px;
 }
 
 #main_content #fan_window h2 {
@@ -215,12 +135,6 @@ nav {
 
 #main_content #fan_window #sign_up_for_free {
   background: linear-gradient(to right, #FFBC03, #F31463);
-}
-
-#main_content #model_window {
-  position: absolute;
-  left: 1065px;
-  top: 117px;
 }
 
 #main_content #model_window h2 {
@@ -245,10 +159,10 @@ nav {
 }
 
 #main_content .bottom_button {
-  height: 48px;
-  width: 284px;
-  border-radius: 6px;
   margin-top: 71px;
+  height: 48px;
+  width: 100%;
+  border-radius: 6px;
   font: bold 16px Lato;
   color: #FFFFFF;
 }
@@ -259,20 +173,41 @@ nav {
 
 #main_content .middle_list {
   margin-top: 42px;
-  height: 249px;
-  width: 226px;
+  width: 100%;
+  height: 46%;
 }
 
 #login_now {
   position: absolute;
-  left: 805px;
   top: 912px;
+  width: 100%;
   height: 22px;
   font-size: 18px;
 }
 
 #login_now a {
   color: #FF5403;
+}
+
+@media only screen and (max-width: 600px) {
+  #fan_window {
+    background-color: red;
+  }
+
+  #main_content {
+    position: relative;
+    background-image: none !important;
+    height: 100%;
+  }
+
+  #or_window {
+    margin-top: 1rem;
+  }
+
+  #login_now {
+    position: relative;
+    top: 200px;
+  }
 }
 
 /*!
