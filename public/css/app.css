@@ -43,35 +43,35 @@
 @charset "UTF-8";
 
 nav {
-  min-height: 72px;
+  min-height: 4.5rem;
 }
 
 #logo {
-  height: 26px;
-  width: 130px;
+  height: 1.625rem;
+  width: 8.125rem;
 }
 
 #navbar_items_right #search_button,
 #navbar_items_right #basket_button {
-  width: 81px;
-  height: 41px;
+  width: 5.0625rem;
+  height: 2.5625rem;
 }
 
 #navbar_items_right #basket_button div {
   position: relative;
-  width: 27px;
-  height: 26px;
+  width: 1.6875rem;
+  height: 1.625rem;
 }
 
 #navbar_items_right #basket_button p {
   position: absolute;
   top: 0;
   right: 0;
-  height: 14px;
-  width: 14px;
+  height: 0.875rem;
+  width: 0.875rem;
   background: linear-gradient(#FFBC03, #F31463);
   border-radius: 50%;
-  font: normal 10px Lato;
+  font: normal 0.625rem Lato;
   color: #FFFFFF;
   text-align: center;
   z-index: 15;
@@ -86,53 +86,53 @@ nav {
 
 #navbar_items_right #sign_up,
 #navbar_items_right #login {
-  width: 81px;
-  height: 36px;
+  width: 5.0625rem;
+  height: 2.25rem;
 }
 
 #navbar_items_right #sign_up {
   border: 1px solid #FF5403;
   color: #FF5403;
   font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 #navbar_items_right #login {
   color: #313640;
-  font: bold 16px Lato;
+  font: bold 1rem Lato;
 }
 
 #models,
 #videos {
-  width: 81px;
-  font: bold 16px Lato;
+  width: 5.0625rem;
+  font: bold 1rem Lato;
 }
 
 #header_who_are_you {
   position: absolute;
-  top: 125px;
+  top: 7.8125rem;
   width: 100%;
   z-index: 5;
 }
 
 #header_who_are_you h1 {
-  font: bold 42px Tajawal !important;
-  height: 56px !important;
-  margin-bottom: 6px !important;
+  font: bold 2.625rem Tajawal !important;
+  height: 3.5rem !important;
+  margin-bottom: 0.375rem !important;
 }
 
 #header_who_are_you #header_under_liner {
-  width: 298px;
-  height: 6px;
+  width: 18.625rem;
+  height: 0.375rem;
   background: linear-gradient(to right, #FFBC03, #F31463);
 }
 
 #main_content {
   position: absolute;
-  left: -4px;
-  top: 151px;
+  left: -0.25rem;
+  top: 9.4375rem;
   width: 100%;
-  min-height: 884px;
+  min-height: 55.25rem;
   background-image: url(/images/background.svg?a01a2d58dfc844f2cfe541552beaedc5) !important;
   background-repeat: repeat;
 }
@@ -140,20 +140,20 @@ nav {
 #main_content #fan_window,
 #main_content #model_window {
   max-width: 100%;
-  height: 540px;
+  height: 33.75rem;
   padding: 0 12%;
   background-color: #FFFFFF;
 }
 
 #main_content #or_window {
-  width: 60px;
-  height: 112px;
-  margin-left: 60px;
-  margin-right: 60px;
+  width: 3.75rem;
+  height: 7rem;
+  margin-left: 3.75rem;
+  margin-right: 3.75rem;
 }
 
 #main_content #or_window p {
-  font: bold 45px Lato;
+  font: bold 2.8125rem Lato;
 }
 
 #main_content #fan_window h2 {
@@ -174,42 +174,42 @@ nav {
 
 #main_content #fan_window h2,
 #main_content #model_window h2 {
-  font: bold 42px Lato;
-  margin-top: 36px;
+  font: bold 2.625rem Lato;
+  margin-top: 2.25rem;
 }
 
 #main_content #fan_window h4,
 #main_content #model_window h4 {
-  font: bold 18px Lato;
-  height: 22px;
-  margin-bottom: 21px;
+  font: bold 1.125rem Lato;
+  height: 1.375rem;
+  margin-bottom: 1.3125rem;
 }
 
 #main_content .bottom_button {
-  margin-top: 71px;
-  height: 48px;
+  margin-top: 4.4375rem;
+  height: 3rem;
   width: 100%;
-  border-radius: 6px;
-  font: bold 16px Lato;
+  border-radius: 0.375rem;
+  font: bold 1rem Lato;
   color: #FFFFFF;
 }
 
 #main_content .bottom_button img {
-  margin-left: 3px;
+  margin-left: 0.1875rem;
 }
 
 #main_content .middle_list {
-  margin-top: 42px;
+  margin-top: 2.625rem;
   width: 100%;
   height: 46%;
 }
 
 #login_now {
   position: absolute;
-  top: 912px;
+  top: 57rem;
   width: 100%;
-  height: 22px;
-  font-size: 18px;
+  height: 1.375rem;
+  font-size: 1.125rem;
 }
 
 #login_now a {
@@ -233,7 +233,7 @@ nav {
 
   #login_now {
     position: relative;
-    top: 200px;
+    top: 12.5rem;
   }
 }
 
