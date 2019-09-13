@@ -13,6 +13,34 @@ nav {
     height: 41px;
   }
 
+  #basket_button {
+    div {
+      position: relative;
+      width: 27px;
+      height: 26px;
+    }
+    p {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 14px;
+      width: 14px;
+      background: linear-gradient(#FFBC03, #F31463);
+      border-radius: 50%;
+      font: normal 10px Lato;
+      color: #FFFFFF;
+      text-align: center;
+      z-index: 15;
+    }
+
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 14;
+    }
+  }
+
   #sign_up, #login {
     width: 81px;
     height: 36px;

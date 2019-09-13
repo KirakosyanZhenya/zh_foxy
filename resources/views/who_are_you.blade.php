@@ -21,8 +21,11 @@
             <div id="search_button" class="d-flex justify-content-center">
                 <img src="{{asset('svg/search_icon.svg')}}">
             </div>
-            <div id="basket_button" class="d-flex justify-content-center">
-                <img src="{{asset('svg/basket_icon.svg')}}">
+            <div id="basket_button" class="d-flex justify-content-center align-items-center">
+                <div>
+                    <p class="d-flex justify-content-center align-items-center">3</p>
+                    <img src="{{asset('svg/CartIcon_Group.svg')}}" width="20" height="20">
+                </div>
             </div>
             <button id="sign_up" type="button" class="btn">Sign Up</button>
             <button id="login" type="button" class="btn">Login</button>
