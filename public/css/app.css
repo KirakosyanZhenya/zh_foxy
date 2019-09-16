@@ -42,6 +42,10 @@
 }
 @charset "UTF-8";
 
+body {
+  background-image: url(/images/wormz.svg?78a5e318f35fbdebfb8773438b0ebf15);
+}
+
 nav {
   min-height: 4.5rem;
 }
@@ -102,6 +106,26 @@ nav {
   font: bold 1rem Lato;
 }
 
+#white_triangle {
+  z-index: -10;
+  position: relative;
+  width: 100%;
+  height: 79px;
+  background-color: #f8f9fa;
+}
+
+#white_triangle:after {
+  content: "";
+  position: absolute;
+  top: 79px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 100vw 7.6vw 0;
+  border-color: transparent #f8f9fa transparent transparent;
+}
+
 #models,
 #videos {
   width: 5.0625rem;
@@ -109,8 +133,6 @@ nav {
 }
 
 #header_who_are_you {
-  position: absolute;
-  top: 7.8125rem;
   width: 100%;
   z-index: 5;
 }
@@ -128,88 +150,116 @@ nav {
 }
 
 #main_content {
-  position: absolute;
-  left: -0.25rem;
-  top: 9.4375rem;
   width: 100%;
+  margin-top: -1.625rem;
   min-height: 55.25rem;
-  background-image: url(/images/background.svg?a01a2d58dfc844f2cfe541552beaedc5) !important;
-  background-repeat: repeat;
 }
 
-#main_content #fan_window,
-#main_content #model_window {
-  max-width: 100%;
+#main_content_2 {
+  width: 100%;
+  margin-top: 4.6875rem;
+}
+
+#main_content_2 #fan_window,
+#main_content_2 #model_window {
+  width: 19.3%;
   height: 33.75rem;
-  padding: 0 12%;
   background-color: #FFFFFF;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.16);
 }
 
-#main_content #or_window {
+#main_content_2 #or_window {
   width: 3.75rem;
-  height: 7rem;
-  margin-left: 3.75rem;
-  margin-right: 3.75rem;
+  height: 100%;
+  margin-left: 3.9%;
+  margin-right: 3.9%;
 }
 
-#main_content #or_window p {
+#main_content_2 #or_window p {
   font: bold 2.8125rem Lato;
 }
 
-#main_content #fan_window h2 {
+#main_content_2 #fan_window h2 {
   color: #FF5403;
 }
 
-#main_content #fan_window #sign_up_for_free {
+#main_content_2 #fan_window #sign_up_for_free {
   background: linear-gradient(to right, #FFBC03, #F31463);
 }
 
-#main_content #model_window h2 {
+#main_content_2 #fan_window #sign_up_for_free div {
+  max-width: 176px;
+}
+
+#main_content_2 #fan_window #sign_up_for_free div span {
+  letter-spacing: 0.016vw;
+}
+
+#main_content_2 #model_window h2 {
   color: #C22AEF;
 }
 
-#main_content #model_window #start_my_store {
+#main_content_2 #model_window #start_my_store {
   background: linear-gradient(to right, #EF2AA5, #C22AEF);
 }
 
-#main_content #fan_window h2,
-#main_content #model_window h2 {
+#main_content_2 #model_window #start_my_store div {
+  max-width: 177px;
+}
+
+#main_content_2 #model_window #start_my_store div span {
+  letter-spacing: 0.025vw;
+}
+
+#main_content_2 #fan_window h2,
+#main_content_2 #model_window h2 {
   font: bold 2.625rem Lato;
   margin-top: 2.25rem;
 }
 
-#main_content #fan_window h4,
-#main_content #model_window h4 {
+#main_content_2 #fan_window h4,
+#main_content_2 #model_window h4 {
+  color: #313640;
   font: bold 1.125rem Lato;
   height: 1.375rem;
   margin-bottom: 1.3125rem;
 }
 
-#main_content .bottom_button {
+#main_content_2 .bottom_button {
   margin-top: 4.4375rem;
   height: 3rem;
-  width: 100%;
+  max-width: 76%;
   border-radius: 0.375rem;
   font: bold 1rem Lato;
   color: #FFFFFF;
+  padding: 3.2% 14.5%;
 }
 
-#main_content .bottom_button img {
-  margin-left: 0.1875rem;
+#main_content_2 .bottom_button img {
+  margin-left: 8px;
 }
 
-#main_content .middle_list {
+#main_content_2 .middle_list {
   margin-top: 2.625rem;
-  width: 100%;
+  max-width: 60.7%;
   height: 46%;
 }
 
+#main_content_2 .middle_list .media {
+  height: 24px;
+  margin-bottom: 12px;
+}
+
+#main_content_2 .middle_list .media-body {
+  color: #616A80;
+}
+
 #login_now {
-  position: absolute;
-  top: 57rem;
   width: 100%;
+  margin-top: 104px;
   height: 1.375rem;
-  font-size: 1.125rem;
+  color: #313640;
+  font: normal 1.125rem Lato;
 }
 
 #login_now a {
@@ -229,11 +279,6 @@ nav {
 
   #or_window {
     margin-top: 1rem;
-  }
-
-  #login_now {
-    position: relative;
-    top: 12.5rem;
   }
 }
 
