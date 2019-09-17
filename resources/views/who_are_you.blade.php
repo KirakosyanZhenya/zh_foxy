@@ -32,8 +32,7 @@
         </div>
     </div>
 </nav>
-<div id="white_triangle">
-</div>
+<div id="white_triangle_top"></div>
 <div id="main_content" class="">
     <div class="row">
         <div id="header_who_are_you">
@@ -156,5 +155,6 @@
         Already have an account?&nbsp; <a href="#"> Login now →</a>
     </div>
 </div>
+<div id="white_triangle_bottom"></div>
 </body>
 </html>

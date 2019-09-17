@@ -4,6 +4,7 @@ body {
 
 nav {
   min-height: 4.5rem;
+  overflow: hidden;
 }
 
 #logo {
@@ -60,12 +61,11 @@ nav {
   #login {
     color: #313640;
     font: bold 1rem Lato;
-    //letter-spacing: 16px;
-    //line-height: 17px;
   }
 }
 
-#white_triangle {
+#white_triangle_top {
+  //overflow: hidden;
   z-index: -10;
   position: relative;
   width: 100%;
@@ -73,7 +73,7 @@ nav {
   background-color: #f8f9fa;
 }
 
-#white_triangle:after {
+#white_triangle_top:after {
   content: "";
   position: absolute;
   top: 79px;  left: 0;
@@ -84,12 +84,33 @@ nav {
   border-color: transparent #f8f9fa transparent transparent;
 }
 
+
+#white_triangle_bottom {
+  z-index: -10;
+  position: relative;
+  bottom: -10px;
+  width: 100%;
+  height: 79px;
+  background-color: #f8f9fa;
+}
+
+#white_triangle_bottom:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7.6vw 0 0 100vw;
+  border-color: transparent transparent transparent #f8f9fa;
+}
+
 #models, #videos {
   width: 5.0625rem;
   font: bold 1rem Lato;
+  color: #313640;
 }
 
 #header_who_are_you {
+  color: #313640;
   width: 100%;
   z-index: 5;
 
@@ -108,12 +129,14 @@ nav {
 }
 
 #main_content {
+  overflow: hidden;
   width: 100%;
   margin-top: -1.625rem;
   min-height: 55.25rem;
 }
 
 #main_content_2 {
+  overflow: hidden;
   width: 100%;
   margin-top: 4.6875rem;
   #fan_window, #model_window {
@@ -126,6 +149,7 @@ nav {
   }
 
   #or_window {
+    color: #313640;
     width: 3.75rem;
     height: 100%;
     margin-left: 3.9%;
@@ -220,7 +244,7 @@ nav {
 
 @media only screen and (max-width: 600px) {
   #fan_window {
-    background-color: red;
+    min-width: 320px;
   }
   #main_content {
     position: relative;
