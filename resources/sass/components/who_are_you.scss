@@ -12,7 +12,7 @@ nav {
   width: 8.125rem;
 }
 
-#navbar_items_right {
+.navbar {
   #search_button, #basket_button {
     width: 5.0625rem;
     height: 2.5625rem;
@@ -46,7 +46,7 @@ nav {
     }
   }
 
-  #sign_up, #login {
+  #sign_up, #login, #collapse_sign_up, #collapse_login {
     width: 5.0625rem;
     height: 2.25rem;
   }
@@ -58,7 +58,7 @@ nav {
     font-size: 0.875rem;
   }
 
-  #login {
+  #login, #collapse_login, #collapse_sign_up {
     color: #313640;
     font: bold 1rem Lato;
   }
@@ -141,6 +141,7 @@ nav {
   margin-top: 4.6875rem;
   #fan_window, #model_window {
     width: 19.3%;
+    min-width: 270px;
     height: 33.75rem;
     background-color: #FFFFFF;
     -webkit-box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.16);
@@ -242,22 +243,143 @@ nav {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  #fan_window {
-    min-width: 320px;
+@media only screen and (max-width: 769px) {
+  #navbarToggleExternalContent a {
+    font: bold 1rem Lato;
+    color: #313640;
+    img {
+      margin-right: 6px;
+    }
+    #collapse_line {
+      background-color: #FF5403;
+    }
   }
+
+  #navbarToggleExternalContent {
+    background-color: #f8f9fa;
+    z-index: 100;
+    hr {
+      background-color: #FF5403;
+    }
+  }
+
+  #navbar_items_left {
+    width: 85%;
+    a {
+      width: 75%;
+      margin-right: 0;
+      text-align: center;
+    }
+  }
+  .navbar {
+    #basket_button {
+      width: auto;
+    }
+  }
+
   #main_content {
-    position: relative;
-    background-image:none !important;
-    height: 100%;
+    margin-top: -4.625rem;
   }
 
   #or_window {
     margin-top: 1rem;
   }
 
-  #login_now {
-    //position: relative;
-    //top: 12.5rem;
+  #main_content_3 {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 4.6875rem;
+    #fan_window, #model_window {
+      max-width: 372px;
+      min-width: 320px;
+      height: 33.75rem;
+      background-color: #FFFFFF;
+      -webkit-box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.16);
+      -moz-box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.16);
+      box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.16);
+    }
+
+    #or_window {
+      color: #313640;
+      width: 3.75rem;
+      height: 100%;
+      margin-left: 3.9%;
+      margin-right: 3.9%;
+      p {
+        font: bold 2.8125rem Lato;
+      }
+    }
+
+    #fan_window {
+      h2 {
+        color: #FF5403;
+      }
+
+      #sign_up_for_free {
+        background: linear-gradient(to right, #FFBC03, #F31463);
+
+        div {
+          max-width: 176px;
+          span {
+            letter-spacing: 0.016vw;
+          }
+        }
+      }
+    }
+
+    #model_window {
+      h2 {
+        color: #C22AEF;
+      }
+
+      #start_my_store {
+        background: linear-gradient(to right, #EF2AA5, #C22AEF);
+
+        div {
+          max-width: 177px;
+          span {
+            letter-spacing: 0.025vw;
+          }
+        }
+      }
+    }
+
+    #fan_window h2, #model_window h2 {
+      font: bold 2.625rem Lato;
+      margin-top: 2.25rem;
+    }
+    #fan_window h4, #model_window h4 {
+      color: #313640;
+      font: bold 1.125rem Lato;
+      height: 1.375rem;
+      margin-bottom: 1.3125rem;
+    }
+    .bottom_button {
+      margin-top: 4.4375rem;
+      height: 3rem;
+      max-width: 76%;
+      border-radius: 0.375rem;
+      font: bold 1rem Lato;
+      color: #FFFFFF;
+      padding: 3.2% 14.5%;
+      img {
+        margin-left: 8px;
+      }
+    }
+
+    .middle_list {
+      margin-top: 2.625rem;
+      max-width: 60.7%;
+      height: 46%;
+      .media {
+        height: 24px;
+        margin-bottom: 12px;
+      }
+      .media-body {
+        color: #616A80;
+      }
+    }
   }
+
+
 }
