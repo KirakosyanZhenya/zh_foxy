@@ -99,9 +99,7 @@ nav {
 }
 
 .navbar #sign_up,
-.navbar #login,
-.navbar #collapse_sign_up,
-.navbar #collapse_login {
+.navbar #login {
   width: 5.0625rem;
   height: 2.25rem;
 }
@@ -113,9 +111,7 @@ nav {
   font-size: 0.875rem;
 }
 
-.navbar #login,
-.navbar #collapse_login,
-.navbar #collapse_sign_up {
+.navbar #login {
   color: #313640;
   font: bold 1rem Lato;
 }
@@ -123,6 +119,7 @@ nav {
 #white_triangle_top {
   z-index: -10;
   position: relative;
+  top: 72px;
   width: 100%;
   height: 79px;
   background-color: #f8f9fa;
@@ -168,7 +165,6 @@ nav {
 #header_who_are_you {
   color: #313640;
   width: 100%;
-  z-index: 5;
 }
 
 #header_who_are_you h1 {
@@ -186,7 +182,7 @@ nav {
 #main_content {
   overflow: hidden;
   width: 100%;
-  margin-top: -1.625rem;
+  margin-top: 2.875rem;
   min-height: 55.25rem;
 }
 
@@ -292,6 +288,10 @@ nav {
   color: #616A80;
 }
 
+#main_content_2 .middle_list p {
+  line-height: 16px;
+}
+
 #login_now {
   width: 100%;
   margin-top: 104px;
@@ -305,26 +305,8 @@ nav {
 }
 
 @media only screen and (max-width: 769px) {
-  #navbarToggleExternalContent a {
-    font: bold 1rem Lato;
-    color: #313640;
-  }
-
-  #navbarToggleExternalContent a img {
-    margin-right: 6px;
-  }
-
-  #navbarToggleExternalContent a #collapse_line {
-    background-color: #FF5403;
-  }
-
-  #navbarToggleExternalContent {
-    background-color: #f8f9fa;
-    z-index: 100;
-  }
-
-  #navbarToggleExternalContent hr {
-    background-color: #FF5403;
+  .navbar #navbarSupportedContent li a {
+    padding: 6px 12px;
   }
 
   #navbar_items_left {
@@ -342,113 +324,29 @@ nav {
   }
 
   #main_content {
-    margin-top: -4.625rem;
+    margin-top: 0.2rem;
   }
 
-  #or_window {
+  #main_content #login_now {
+    margin-top: 70px;
+  }
+
+  #white_triangle_bottom {
+    bottom: -30px;
+  }
+
+  #main_content_2 {
+    flex-wrap: wrap;
+  }
+
+  #main_content_2 #fan_window,
+  #main_content_2 #model_window {
+    width: 90%;
+  }
+
+  #main_content_2 #or_window {
     margin-top: 1rem;
-  }
-
-  #main_content_3 {
-    overflow: hidden;
-    width: 100%;
-    margin-top: 4.6875rem;
-  }
-
-  #main_content_3 #fan_window,
-  #main_content_3 #model_window {
-    max-width: 372px;
-    min-width: 320px;
-    height: 33.75rem;
-    background-color: #FFFFFF;
-    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.16);
-  }
-
-  #main_content_3 #or_window {
-    color: #313640;
-    width: 3.75rem;
-    height: 100%;
-    margin-left: 3.9%;
-    margin-right: 3.9%;
-  }
-
-  #main_content_3 #or_window p {
-    font: bold 2.8125rem Lato;
-  }
-
-  #main_content_3 #fan_window h2 {
-    color: #FF5403;
-  }
-
-  #main_content_3 #fan_window #sign_up_for_free {
-    background: linear-gradient(to right, #FFBC03, #F31463);
-  }
-
-  #main_content_3 #fan_window #sign_up_for_free div {
-    max-width: 176px;
-  }
-
-  #main_content_3 #fan_window #sign_up_for_free div span {
-    letter-spacing: 0.016vw;
-  }
-
-  #main_content_3 #model_window h2 {
-    color: #C22AEF;
-  }
-
-  #main_content_3 #model_window #start_my_store {
-    background: linear-gradient(to right, #EF2AA5, #C22AEF);
-  }
-
-  #main_content_3 #model_window #start_my_store div {
-    max-width: 177px;
-  }
-
-  #main_content_3 #model_window #start_my_store div span {
-    letter-spacing: 0.025vw;
-  }
-
-  #main_content_3 #fan_window h2,
-  #main_content_3 #model_window h2 {
-    font: bold 2.625rem Lato;
-    margin-top: 2.25rem;
-  }
-
-  #main_content_3 #fan_window h4,
-  #main_content_3 #model_window h4 {
-    color: #313640;
-    font: bold 1.125rem Lato;
-    height: 1.375rem;
-    margin-bottom: 1.3125rem;
-  }
-
-  #main_content_3 .bottom_button {
-    margin-top: 4.4375rem;
-    height: 3rem;
-    max-width: 76%;
-    border-radius: 0.375rem;
-    font: bold 1rem Lato;
-    color: #FFFFFF;
-    padding: 3.2% 14.5%;
-  }
-
-  #main_content_3 .bottom_button img {
-    margin-left: 8px;
-  }
-
-  #main_content_3 .middle_list {
-    margin-top: 2.625rem;
-    max-width: 60.7%;
-    height: 46%;
-  }
-
-  #main_content_3 .middle_list .media {
-    height: 24px;
-    margin-bottom: 12px;
-  }
-
-  #main_content_3 .middle_list .media-body {
-    color: #616A80;
+    height: 140px;
   }
 }
 
