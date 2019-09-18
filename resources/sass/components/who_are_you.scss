@@ -10,15 +10,25 @@ nav {
 #logo {
   height: 1.625rem;
   width: 8.125rem;
+  padding: 0;
 }
 
 .navbar {
-  #search_button, #basket_button {
+  #navbarSupportedContent {
+    li {
+      margin-right: 4.94%;
+      a {
+        padding: 0;
+      }
+    }
+  }
+
+  #search_button, .basket_button {
     width: 5.0625rem;
     height: 2.5625rem;
   }
 
-  #basket_button {
+  .basket_button {
     div {
       position: relative;
       width: 1.6875rem;
@@ -272,7 +282,7 @@ nav {
     }
   }
   .navbar {
-    #basket_button {
+    .basket_button {
       width: auto;
     }
   }

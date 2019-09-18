@@ -54,21 +54,30 @@ nav {
 #logo {
   height: 1.625rem;
   width: 8.125rem;
+  padding: 0;
+}
+
+.navbar #navbarSupportedContent li {
+  margin-right: 4.94%;
+}
+
+.navbar #navbarSupportedContent li a {
+  padding: 0;
 }
 
 .navbar #search_button,
-.navbar #basket_button {
+.navbar .basket_button {
   width: 5.0625rem;
   height: 2.5625rem;
 }
 
-.navbar #basket_button div {
+.navbar .basket_button div {
   position: relative;
   width: 1.6875rem;
   height: 1.625rem;
 }
 
-.navbar #basket_button p {
+.navbar .basket_button p {
   position: absolute;
   top: 0;
   right: 0;
@@ -82,7 +91,7 @@ nav {
   z-index: 15;
 }
 
-.navbar #basket_button img {
+.navbar .basket_button img {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -328,7 +337,7 @@ nav {
     text-align: center;
   }
 
-  .navbar #basket_button {
+  .navbar .basket_button {
     width: auto;
   }
 

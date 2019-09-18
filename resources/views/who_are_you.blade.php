@@ -8,55 +8,55 @@
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 </head>
 <body>
-<nav class="navbar navbar-toggleable-md navbar-light bg-light">
+<nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container">
-        <div id="navbar_items_left" class="d-flex flex-row">
-            <div class="d-block d-md-none">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <a class="navbar-brand" href="#" id="logo">
-                <img src="{{asset('svg/foxy_face_winkle.svg')}}" alt="foxy_face_winkle">
-                <img src="{{asset('svg/Component_1.svg')}}" alt="foxy">
-            </a>
-            <button id="models" type="button" class="d-none d-md-block btn btn-light pull-left">Models</button>
-            <button id="videos" type="button" class="d-none d-md-block btn btn-light">Videos</button>
-        </div>
-        <div class="d-flex justify-content-center flex-row" id="navbar_items_right">
-            <div class="d-none d-md-block">
-                <div id="search_button" class="d-flex justify-content-center">
-                    <img src="{{asset('svg/search_icon.svg')}}">
-                </div>
-            </div>
-            <div id="basket_button" class="d-flex justify-content-center align-items-center">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#" id="logo">
+            <img src="{{asset('svg/foxy_face_winkle.svg')}}" alt="foxy_face_winkle">
+            <img src="{{asset('svg/Component_1.svg')}}" alt="foxy">
+        </a>
+        <div class="d-block d-md-none">
+            <a id="basket_button_small_size" class="nav-link d-flex justify-content-center align-items-center basket_button">
                 <div>
                     <p class="d-flex justify-content-center align-items-center">3</p>
                     <img src="{{asset('svg/CartIcon_Group.svg')}}" width="20" height="20">
                 </div>
-            </div>
-            <button id="sign_up" type="button" class="d-none d-md-block btn">Sign Up</button>
-            <button id="login" type="button" class="d-none d-md-block btn">Login</button>
+            </a>
         </div>
-        <div class="d-block d-md-none" style="width: 100%">
-            <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"> Models</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"> Videos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center" href="#"><img src="{{asset('svg/search_icon.svg')}}" width="14" height="14">   Search </a>
-                    </li>
-                    <li><hr></li>
-                    <li class="nav-item d-flex flex-row-reverse">
-                        <button id="collapse_sign_up" type="button" class="btn">Sign Up</button>
-                        <button id="collapse_login" type="button" class="btn">Login</button>
-                    </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link" id="models"  href="#">Models</a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a id="videos" class="nav-link" href="#">Videos</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                        <div id="search_button" class="d-flex justify-content-center">
+                            <img src="{{asset('svg/search_icon.svg')}}">
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                    <a id="basket_button_big_size" class="nav-link d-flex justify-content-center align-items-center basket_button">
+                        <div>
+                            <p class="d-flex justify-content-center align-items-center">3</p>
+                            <img src="{{asset('svg/CartIcon_Group.svg')}}" width="20" height="20">
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a id="sign_up" class="btn d-flex justify-content-center align-items-center">Sign Up</a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a id="login" class="btn d-flex justify-content-center align-items-center">Login</a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
