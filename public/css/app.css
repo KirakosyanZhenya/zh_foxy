@@ -195,9 +195,13 @@ nav {
 #main_content_2 #fan_window,
 #main_content_2 #model_window {
   width: 19.3%;
+  max-width: 372px;
   min-width: 270px;
-  height: 33.75rem;
+  height: 100%;
+  max-height: 540px;
+  padding: 1.865% 2.27% 2.27% 2.27%;
   background-color: #FFFFFF;
+  border-radius: 6px;
   box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.16);
 }
 
@@ -225,10 +229,6 @@ nav {
   max-width: 176px;
 }
 
-#main_content_2 #fan_window #sign_up_for_free div span {
-  letter-spacing: 0.016vw;
-}
-
 #main_content_2 #model_window h2 {
   color: #C22AEF;
 }
@@ -248,7 +248,6 @@ nav {
 #main_content_2 #fan_window h2,
 #main_content_2 #model_window h2 {
   font: bold 2.625rem Lato;
-  margin-top: 2.25rem;
 }
 
 #main_content_2 #fan_window h4,
@@ -260,9 +259,8 @@ nav {
 }
 
 #main_content_2 .bottom_button {
-  margin-top: 4.4375rem;
   height: 3rem;
-  max-width: 76%;
+  width: 100%;
   border-radius: 0.375rem;
   font: bold 1rem Lato;
   color: #FFFFFF;
@@ -274,18 +272,28 @@ nav {
 }
 
 #main_content_2 .middle_list {
-  margin-top: 2.625rem;
-  max-width: 60.7%;
-  height: 46%;
+  width: 100%;
+  height: 100%;
+  max-height: 353px;
+  padding: 12% 10.08% 25.1% 10.08%;
 }
 
 #main_content_2 .middle_list .media {
   height: 24px;
   margin-bottom: 12px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
 }
 
 #main_content_2 .middle_list .media-body {
   color: #616A80;
+}
+
+#main_content_2 .middle_list .media-body p {
+  margin: 0;
 }
 
 #main_content_2 .middle_list p {

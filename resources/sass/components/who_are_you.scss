@@ -155,9 +155,13 @@ nav {
   margin-top: 4.6875rem;
   #fan_window, #model_window {
     width: 19.3%;
+    max-width: 372px;
     min-width: 270px;
-    height: 33.75rem;
+    height: 100%;
+    max-height: 540px;
+    padding: 1.865% 2.27% 2.27% 2.27%;
     background-color: #FFFFFF;
+    border-radius: 6px;
     -webkit-box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.16);
     -moz-box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.16);
     box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.16);
@@ -184,9 +188,6 @@ nav {
 
       div {
         max-width: 176px;
-        span {
-          letter-spacing: 0.016vw;
-        }
       }
     }
   }
@@ -210,7 +211,7 @@ nav {
 
   #fan_window h2, #model_window h2 {
     font: bold 2.625rem Lato;
-    margin-top: 2.25rem;
+    //margin-top: 2.25rem;
   }
   #fan_window h4, #model_window h4 {
     color: #313640;
@@ -219,9 +220,9 @@ nav {
     margin-bottom: 1.3125rem;
   }
   .bottom_button {
-    margin-top: 4.4375rem;
+    //margin-top: 4.4375rem;
     height: 3rem;
-    max-width: 76%;
+    width: 100%;
     border-radius: 0.375rem;
     font: bold 1rem Lato;
     color: #FFFFFF;
@@ -232,15 +233,25 @@ nav {
   }
 
   .middle_list {
-    margin-top: 2.625rem;
-    max-width: 60.7%;
-    height: 46%;
+    //margin-top: 2.625rem;
+    width: 100%;
+    height: 100%;
+    max-height: 353px;
+    padding: 12% 10.08% 25.1% 10.08%;
     .media {
       height: 24px;
       margin-bottom: 12px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: stretch;
     }
     .media-body {
       color: #616A80;
+      p {
+        margin: 0;
+      }
     }
     p {
       line-height: 16px;
