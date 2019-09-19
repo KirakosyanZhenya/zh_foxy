@@ -8,7 +8,7 @@
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+<nav class="navbar navbar-expand-md navbar-light fixed-top">
     <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -63,8 +63,8 @@
 <div id="white_triangle_top"></div>
 <div id="main_content" class="">
     <div class="row">
-        <div id="header_who_are_you">
-            <div class="d-flex align-items-center flex-column">
+        <div id="header_who_are_you" class="d-flex justify-content-center">
+            <div class="d-flex align-items-start flex-column">
                 <h1>Who are you?</h1>
                 <div id="header_under_liner"></div>
             </div>
@@ -72,7 +72,8 @@
     </div>
     <div class="row">
         <div class="d-flex justify-content-center flex-row" id="main_content_2">
-            <div id="fan_window" class="d-flex align-items-center flex-column">
+            <div id="fan_window_m_s" style="flex-basis:372px">
+                <div id="fan_window" class="d-flex align-items-center flex-column">
                 <h2>Fan</h2>
                 <div class="align-items-left middle_list">
                     <h4>Signup for a free account to:</h4>
@@ -120,13 +121,17 @@
                     </div>
                 </div>
             </div>
-            <div id="or_window" class="d-flex align-items-center">
-            <div class="d-flex justify-content-center align-items-center flex-column">
-                <img src="{{asset('svg/Group_2173.svg')}}">
-                <p>or</p>
             </div>
-        </div>
-            <div id="model_window" class="d-flex align-items-center flex-column">
+            <div id="or_window_m_s" style="flex-basis: 59.85px">
+                <div id="or_window" class="d-flex align-items-center">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <img src="{{asset('svg/Group_2173.svg')}}">
+                        <p>or</p>
+                    </div>
+                </div>
+            </div>
+            <div id="model_window_m_s" style="flex-basis:372px">
+                <div id="model_window" class="d-flex align-items-center flex-column">
                 <h2>Model</h2>
                 <div class="align-items-left middle_list">
                     <h4>Open your own store to:</h4>
@@ -173,6 +178,7 @@
                         <img src="{{asset('svg/store-clipart-transparent-780888-5417819_white.svg')}}">
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </div>

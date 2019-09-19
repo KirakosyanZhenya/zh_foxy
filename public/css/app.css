@@ -49,6 +49,7 @@ body {
 nav {
   min-height: 4.5rem;
   overflow: hidden;
+  background-color: #FFFFFF;
 }
 
 #logo {
@@ -116,34 +117,35 @@ nav {
   font: bold 1rem Lato;
 }
 
+.basic_square,
+#white_triangle_bottom,
 #white_triangle_top {
   z-index: -10;
   position: relative;
-  top: 72px;
   width: 100%;
   height: 79px;
-  background-color: #f8f9fa;
+  background-color: #FFFFFF;
+}
+
+#white_triangle_top {
+  top: 72px;
+}
+
+#white_triangle_bottom {
+  bottom: -10px;
+  height: 155px;
 }
 
 #white_triangle_top:after {
   content: "";
-  position: absolute;
-  top: 79px;
-  left: 0;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 0 100vw 7.6vw 0;
-  border-color: transparent #f8f9fa transparent transparent;
-}
-
-#white_triangle_bottom {
-  z-index: -10;
-  position: relative;
-  bottom: -10px;
-  width: 100%;
-  height: 79px;
-  background-color: #f8f9fa;
+  border-color: transparent #FFFFFF transparent transparent;
+  position: absolute;
+  top: 79px;
+  left: 0;
 }
 
 #white_triangle_bottom:before {
@@ -152,7 +154,7 @@ nav {
   height: 0;
   border-style: solid;
   border-width: 7.6vw 0 0 100vw;
-  border-color: transparent transparent transparent #f8f9fa;
+  border-color: transparent transparent transparent #FFFFFF;
 }
 
 #models,
@@ -194,23 +196,26 @@ nav {
 
 #main_content_2 #fan_window,
 #main_content_2 #model_window {
-  width: 19.3%;
+  width: 100%;
   max-width: 372px;
   min-width: 270px;
   height: 100%;
   max-height: 540px;
-  padding: 1.865% 2.27% 2.27% 2.27%;
+  padding: 9.68% 11.83% 11.83% 11.83%;
   background-color: #FFFFFF;
   border-radius: 6px;
   box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.16);
 }
 
+#main_content_2 #or_window_m_s {
+  margin-left: 3.8%;
+  margin-right: 3.8%;
+}
+
 #main_content_2 #or_window {
   color: #313640;
-  width: 3.75rem;
   height: 100%;
-  margin-left: 3.9%;
-  margin-right: 3.9%;
+  width: 100%;
 }
 
 #main_content_2 #or_window p {
@@ -312,6 +317,32 @@ nav {
   color: #FF5403;
 }
 
+@media only screen and (max-width: 920px) {
+  #main_content_2 {
+    flex-wrap: wrap;
+  }
+
+  #main_content_2 #fan_window_m_s,
+  #main_content_2 #or_window_m_s,
+  #main_content_2 #model_window_m_s {
+    display: flex;
+    flex-basis: 100% !important;
+    justify-content: center;
+  }
+
+  #main_content_2 #fan_window,
+  #main_content_2 #model_window {
+    width: 80%;
+    padding: 5.63%;
+  }
+
+  #main_content_2 #or_window {
+    width: 59px;
+    margin-top: 1rem;
+    height: 140px;
+  }
+}
+
 @media only screen and (max-width: 769px) {
   .navbar #navbarSupportedContent li a {
     padding: 6px 12px;
@@ -341,20 +372,6 @@ nav {
 
   #white_triangle_bottom {
     bottom: -30px;
-  }
-
-  #main_content_2 {
-    flex-wrap: wrap;
-  }
-
-  #main_content_2 #fan_window,
-  #main_content_2 #model_window {
-    width: 90%;
-  }
-
-  #main_content_2 #or_window {
-    margin-top: 1rem;
-    height: 140px;
   }
 }
 
