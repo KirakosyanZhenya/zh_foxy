@@ -14,8 +14,12 @@ nav {
 
 #logo {
   height: 1.625rem;
-  width: 8.125rem;
+  max-width: 130px;
   padding: 0;
+  margin-right: 5.756%;
+  img:first-of-type {
+    margin-right: 14.9px;
+  }
 }
 
 .navbar {
@@ -147,7 +151,7 @@ nav {
 
 #main_content_2 {
   //flex-wrap: wrap;
-  overflow: hidden;
+  //overflow: hidden;
   width: 100%;
   margin-top: 4.6875rem;
   #fan_window, #model_window {

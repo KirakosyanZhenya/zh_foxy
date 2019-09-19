@@ -54,8 +54,13 @@ nav {
 
 #logo {
   height: 1.625rem;
-  width: 8.125rem;
+  max-width: 130px;
   padding: 0;
+  margin-right: 5.756%;
+}
+
+#logo img:first-of-type {
+  margin-right: 14.9px;
 }
 
 .navbar #navbarSupportedContent li {
@@ -189,7 +194,6 @@ nav {
 }
 
 #main_content_2 {
-  overflow: hidden;
   width: 100%;
   margin-top: 4.6875rem;
 }
