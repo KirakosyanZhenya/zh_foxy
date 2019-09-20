@@ -108,12 +108,12 @@ nav {
   height: 155px;
 }
 #white_triangle_top:after {
-  @include triangle(0 100vw 7.6vw 0, transparent $white_color transparent transparent);
+  @include triangle(0 100vw 7.5vw 0, transparent $white_color transparent transparent);
   position: absolute;
   top: 79px;  left: 0;
 }
 #white_triangle_bottom:before {
-  @include triangle(7.6vw 0 0 100vw, transparent transparent transparent $white_color);
+  @include triangle(6.7vw 0 0 100vw, transparent transparent transparent $white_color);
 }
 
 #models, #videos {
@@ -298,6 +298,11 @@ nav {
   }
 }
 
+@media (min-width: 769px) and (max-width: 920px){
+  #login_now {
+    margin-bottom: 35px;
+  }
+}
 @media only screen and (max-width: 769px) {
   .navbar {
     #navbarSupportedContent {
@@ -307,6 +312,10 @@ nav {
         }
       }
     }
+  }
+
+  #white_triangle_bottom:before {
+    border-width: 5vw 0 0 100vw;
   }
 
   #navbar_items_left {
