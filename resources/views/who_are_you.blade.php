@@ -8,7 +8,7 @@
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,10 +28,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item d-flex align-items-center">
-                    <a class="nav-link" id="models"  href="#">Models</a>
+                    <a class="nav-link d-flex justify-content-center" id="models"  href="#">Models</a>
                 </li>
                 <li class="nav-item d-flex align-items-center">
-                    <a id="videos" class="nav-link" href="#">Videos</a>
+                    <a id="videos" class="nav-link d-flex justify-content-center" href="#">Videos</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
