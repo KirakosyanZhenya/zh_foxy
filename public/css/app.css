@@ -259,6 +259,7 @@ nav {
 #main_content_2 #model_window h2 {
   font: bolder 2.625rem Lato;
   line-height: 45px;
+  padding: 2.5px 0;
 }
 
 #main_content_2 #fan_window h4,
@@ -266,7 +267,7 @@ nav {
   color: #313640;
   font: bold 1.125rem Lato;
   height: 1.375rem;
-  margin-bottom: 1.3125rem;
+  margin-bottom: 1.425rem;
 }
 
 #main_content_2 .bottom_button {
@@ -286,7 +287,7 @@ nav {
 #main_content_2 .middle_list {
   width: 100%;
   height: 100%;
-  max-height: 353px;
+  max-height: 354px;
   padding: 12% 10.08% 25.1% 10.08%;
 }
 
@@ -323,6 +324,7 @@ nav {
   height: 1.375rem;
   color: #313640;
   font: normal 1.125rem Lato;
+  line-height: 15px;
 }
 
 #login_now a {
