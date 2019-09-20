@@ -105,6 +105,10 @@ nav {
   z-index: 14;
 }
 
+.navbar #basket_button_small_size {
+  display: none !important;
+}
+
 .navbar #sign_up,
 .navbar #login {
   width: 5.0625rem;
@@ -291,7 +295,8 @@ nav {
   padding: 12% 10.08% 25.1% 10.08%;
 }
 
-#main_content_2 .middle_list .media {
+#main_content_2 .middle_list .media_a {
+  display: flex;
   height: 24px;
   margin-bottom: 12px;
   flex-direction: row;
@@ -301,16 +306,15 @@ nav {
   align-content: stretch;
 }
 
-#main_content_2 .middle_list .media img {
-  position: relative;
-  bottom: 1px;
+#main_content_2 .middle_list .media_a img {
+  margin-bottom: 4px;
 }
 
-#main_content_2 .middle_list .media-body {
+#main_content_2 .middle_list .media_a-body {
   color: #616A80;
 }
 
-#main_content_2 .middle_list .media-body p {
+#main_content_2 .middle_list .media_a-body p {
   margin: 0;
 }
 
@@ -330,6 +334,37 @@ nav {
 #login_now a {
   color: #FF5403;
   font-weight: bold;
+}
+
+@media (min-width: 992px) and (max-width: 1600px) {
+  #main_content {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #basket_button_big_size {
+    display: none !important;
+  }
+
+  #navbarSupportedContent li {
+    justify-content: center;
+  }
+
+  .navbar #basket_button_small_size {
+    display: flex !important;
+  }
+
+  .navbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  #main_content {
+    margin-top: 90px;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -388,15 +423,11 @@ nav {
   }
 
   #main_content {
-    margin-top: 0.2rem;
+    margin-top: 72px;
   }
 
   #main_content #login_now {
     margin-top: 70px;
-  }
-
-  #white_triangle_bottom {
-    bottom: -30px;
   }
 }
 

@@ -17,7 +17,7 @@
             <img src="{{asset('svg/foxy_face_winkle.svg')}}" alt="foxy_face_winkle">
             <img src="{{asset('svg/Component_1.svg')}}" alt="foxy">
         </a>
-        <div class="d-block d-md-none">
+        <div>
             <a id="basket_button_small_size" class="nav-link d-flex justify-content-center align-items-center basket_button">
                 <div>
                     <p class="d-flex justify-content-center align-items-center">3</p>
@@ -36,7 +36,7 @@
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light">
+                    <a class="nav-link waves-effect waves-light d-flex justify-content-center">
                         <div id="search_button" class="d-flex justify-content-center">
                             <img src="{{asset('svg/search_icon.svg')}}">
                         </div>
@@ -77,39 +77,51 @@
                 <h2>Fan</h2>
                 <div class="align-items-left middle_list">
                     <h4>Signup for a free account to:</h4>
-                    <div class="media">
-                        <img class="align-self-start mr-2" src="{{asset('svg/Group_3414.svg')}}">
-                        <div class="media-body">
+                    <div class="media_a">
+                        <div style="height: 24px">
+                            <img class="align-self-start mr-2" src="{{asset('svg/Group_3414.svg')}}">
+                        </div>
+                        <div class="media_a-body">
                             <p class="d-flex align-items-center">Chat with your dream girls</p>
                         </div>
                     </div>
-                    <div class="media">
-                        <img class="align-self-start mr-2" src="{{asset('svg/Group_3414.svg')}}">
-                        <div class="media-body">
+                    <div class="media_a">
+                        <div style="height: 24px">
+                            <img class="align-self-start mr-2" src="{{asset('svg/Group_3414.svg')}}">
+                        </div>
+                        <div class="media_a-body">
                             <p class="d-flex align-items-center">Order Custom Videos</p>
                         </div>
                     </div>
-                    <div class="media">
-                        <img class="align-self-start mr-2" src="{{asset('svg/Group_3414.svg')}}">
-                        <div class="media-body">
+                    <div class="media_a">
+                        <div style="height: 24px">
+                            <img class="align-self-start mr-2" src="{{asset('svg/Group_3414.svg')}}">
+                        </div>
+                        <div class="media_a-body">
                             <p class="d-flex align-items-center">Access private Snapchats</p>
                         </div>
                     </div>
-                    <div class="media">
-                        <img class="align-self-start mr-2" src="{{asset('svg/Group_3414.svg')}}">
-                        <div class="media-body">
+                    <div class="media_a">
+                        <div style="height: 24px">
+                            <img class="align-self-start mr-2" src="{{asset('svg/Group_3414.svg')}}">
+                        </div>
+                        <div class="media_a-body">
                             <p class="d-flex align-items-center">Buy exclusive Videos</p>
                         </div>
                     </div>
-                    <div class="media">
-                        <img class="align-self-start mr-2" src="{{asset('svg/Group_3414.svg')}}">
-                        <div class="media-body">
+                    <div class="media_a">
+                        <div style="height: 24px">
+                            <img class="align-self-start mr-2" src="{{asset('svg/Group_3414.svg')}}">
+                        </div>
+                        <div class="media_a-body">
                             <p class="d-flex align-items-center">Find your new crush</p>
                         </div>
                     </div>
-                    <div class="media">
-                        <img class="align-self-start mr-2" src="{{asset('svg/Group_3414.svg')}}">
-                        <div class="media-body">
+                    <div class="media_a">
+                        <div style="height: 24px">
+                            <img class="align-self-start mr-2" src="{{asset('svg/Group_3414.svg')}}">
+                        </div>
+                        <div class="media_a-body">
                             <p class="d-flex align-items-center">And much more…</p>
                         </div>
                     </div>
@@ -135,39 +147,51 @@
                 <h2>Model</h2>
                 <div class="align-items-left middle_list">
                     <h4>Open your own store to:</h4>
-                    <div class="media">
-                        <img class="align-self-start mr-2" src="{{asset('svg/Group_3413.svg')}}">
-                        <div class="media-body">
+                    <div class="media_a">
+                        <div style="height: 24px">
+                            <img class="align-self-start mr-2" src="{{asset('svg/Group_3413.svg')}}">
+                        </div>
+                        <div class="media_a-body">
                             <p class="d-flex align-items-center">Sell videos&photosets</p>
                         </div>
                     </div>
-                    <div class="media">
-                        <img class="align-self-start mr-2" src="{{asset('svg/Group_3413.svg')}}">
-                        <div class="media-body">
+                    <div class="media_a">
+                        <div style="height: 24px">
+                            <img class="align-self-start mr-2" src="{{asset('svg/Group_3413.svg')}}">
+                        </div>
+                        <div class="media_a-body">
                             <p class="d-flex align-items-center">Sell customs</p>
                         </div>
                     </div>
-                    <div class="media">
-                        <img class="align-self-start mr-2" src="{{asset('svg/Group_3413.svg')}}">
-                        <div class="media-body">
+                    <div class="media_a">
+                        <div style="height: 24px">
+                            <img class="align-self-start mr-2" src="{{asset('svg/Group_3413.svg')}}">
+                        </div>
+                        <div class="media_a-body">
                             <p class="d-flex align-items-center">Sell 1-on-1 video chats</p>
                         </div>
                     </div>
-                    <div class="media">
-                        <img class="align-self-start mr-2" src="{{asset('svg/Group_3413.svg')}}">
-                        <div class="media-body">
+                    <div class="media_a">
+                        <div style="height: 24px">
+                            <img class="align-self-start mr-2" src="{{asset('svg/Group_3413.svg')}}">
+                        </div>
+                        <div class="media_a-body">
                             <p class="d-flex align-items-center">Sell custom subscriptions</p>
                         </div>
                     </div>
-                    <div class="media">
-                        <img class="align-self-start mr-2" src="{{asset('svg/Group_3413.svg')}}">
-                        <div class="media-body">
+                    <div class="media_a">
+                        <div style="height: 24px">
+                            <img class="align-self-start mr-2" src="{{asset('svg/Group_3413.svg')}}">
+                        </div>
+                        <div class="media_a-body">
                             <p class="d-flex align-items-center">Use your own custom domain</p>
                         </div>
                     </div>
-                    <div class="media">
-                        <img class="align-self-start mr-2" src="{{asset('svg/Group_3413.svg')}}">
-                        <div class="media-body">
+                    <div class="media_a">
+                        <div style="height: 24px">
+                            <img class="align-self-start mr-2" src="{{asset('svg/Group_3413.svg')}}">
+                        </div>
+                        <div class="media_a-body">
                             <p class="d-flex align-items-center">And much more…</p>
                         </div>
                     </div>
